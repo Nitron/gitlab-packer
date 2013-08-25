@@ -1,0 +1,21 @@
+{
+    "builders": [
+        {
+            "type": "vmware",
+            "iso_url": "http://releases.ubuntu.com/12.04/ubuntu-12.04.3-server-amd64.iso",
+            "iso_checksum": "2cbe868812a871242cdcdd8f2fd6feb9",
+            "iso_checksum_type": "md5",
+            "ssh_username": "gitlab",
+            "ssh_password": "g!tl4b",
+            "ssh_wait_timeout": "30m",
+            "shutdown_command": "echo 'g!tl4b' | sudo -E -S shutdown -P now",
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "script": "install_gitlab.sh",
+            "execute_command": "echo 'g!tl4b' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'"
+        }
+    ]
+}

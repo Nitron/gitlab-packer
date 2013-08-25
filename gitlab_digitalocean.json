@@ -1,0 +1,18 @@
+{
+    "builders": [
+        {
+            "type": "digitalocean",
+            "image_id": 284211,
+            "api_key": "<Digital Ocean API Key>",
+            "client_id": "<Digital Ocean Client ID>",
+            "snapshot_name": "GitLab"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "script": "install_gitlab.sh",
+            "execute_command": "echo 'g!tl4b' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'"
+        }
+    ]
+}
