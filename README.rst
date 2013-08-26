@@ -3,7 +3,7 @@ gitlab-packer
 
 Packer configurations for installing GitLab 6.0 on VMWare and Digital Ocean.
 
-Inspired by/based on `crashsystems' gitlab-docker<https://github.com/crashsystems/gitlab-docker>`_.
+Inspired by/based on crashsystems' gitlab-docker_.
 
 Usage
 =====
@@ -18,3 +18,5 @@ Notes
 
 * A preseed configuration for building with VMWare is in the works.
 * Building for Digital Ocean seems to have some reliability issues. The process may need to be run multiple times to get a working installation. A fix for this is also in the works.
+
+.. _gitlab-docker: https://github.com/crashsystems/gitlab-docker
