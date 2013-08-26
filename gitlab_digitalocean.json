@@ -3,6 +3,8 @@
         {
             "type": "digitalocean",
             "image_id": 284211,
+            "region_id": 4,
+            "size_id": 63,
             "api_key": "<Digital Ocean API Key>",
             "client_id": "<Digital Ocean Client ID>",
             "snapshot_name": "GitLab"
