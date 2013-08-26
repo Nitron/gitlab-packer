@@ -1,7 +1,9 @@
 gitlab-packer
 =============
 
-Build GitLab images/snapshots for VMWare and Digital Ocean
+Packer configurations for installing GitLab 6.0 on VMWare and Digital Ocean.
+
+Inspired by/based on `crashsystems' gitlab-docker<https://github.com/crashsystems/gitlab-docker>`_.
 
 Usage
 =====
